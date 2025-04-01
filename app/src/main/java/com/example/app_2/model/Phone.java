@@ -1,4 +1,4 @@
-package com.example.app_2;
+package com.example.app_2.model;
 
 
 import androidx.annotation.NonNull;

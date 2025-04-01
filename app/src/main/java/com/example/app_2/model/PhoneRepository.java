@@ -1,6 +1,5 @@
-package com.example.app_2;
+package com.example.app_2.model;
 
-import android.app.Application;
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
