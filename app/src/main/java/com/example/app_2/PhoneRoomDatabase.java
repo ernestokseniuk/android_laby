@@ -48,11 +48,10 @@ public abstract class PhoneRoomDatabase extends RoomDatabase {
 
                     // Upewnienie się, że INSTANCE jest już zainicjalizowane
                     databaseWriteExecutor.execute(() -> {
-                        PhoneRoomDatabase instance = INSTANCE;
-                        if (instance != null) {
-                            PhoneDao dao = instance.phoneDao();
-                            // Można tu dodać inicjalne rekordy do bazy
-                        }
+
+                            PhoneDao dao = INSTANCE.phoneDao();
+                            dao.insert(new Phone("15","Google","Pixel 9","www.google.com"));
+
                     });
                 }
             };

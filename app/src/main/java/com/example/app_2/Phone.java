@@ -26,12 +26,11 @@ public class Phone {
     @NonNull
     private String webSite;
 
-    public Phone(int id, @NonNull String manufacturer, @NonNull String model, @NonNull String androidVersion, @NonNull String webSite) {
-        this.id = id;
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.androidVersion = androidVersion;
+    public Phone(@NonNull String androidVersion,  @NonNull String manufacturer,@NonNull String model,@NonNull String webSite) {
         this.webSite = webSite;
+        this.androidVersion = androidVersion;
+        this.model = model;
+        this.manufacturer = manufacturer;
     }
 
     public int getId() {
