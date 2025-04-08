@@ -51,6 +51,8 @@ public abstract class PhoneRoomDatabase extends RoomDatabase {
 
                             PhoneDao dao = INSTANCE.phoneDao();
                             dao.insert(new Phone("15","Google","Pixel 9","www.google.com"));
+                            dao.insert(new Phone("14","Google2","Pixel 9A","www.google.com"));
+                            dao.insert(new Phone("13","Google3","Pixel 9B","www.google.com"));
 
                     });
                 }

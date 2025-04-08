@@ -20,7 +20,7 @@ public class PhoneRepository {
         return this.allPhones;
     }
 
-    public void deleteAllPones(){
+    public void deleteAllPhones(){
         PhoneRoomDatabase.databaseWriteExecutor.execute(this.phoneDao::deleteAllPhones);
     }
 
